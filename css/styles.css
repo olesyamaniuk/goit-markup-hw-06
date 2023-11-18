@@ -109,6 +109,243 @@ body {
 }
 /* ============== HEADER STYLES ============== */
 
+/* ============== HERO STYLES ============== */
+.hero {
+  text-align: center;
+  margin: 0 auto;
+  padding: 72px 0;
+  width: 100%;
+  height: 432px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-mobile.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero-title {
+  text-align: center;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  max-width: 496px;
+  margin: 0 auto 48px;
+}
+.hero-button {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  background-color: #4d5ae5;
+  color: #ffffff;
+  padding: 16px 32px;
+  display: block;
+  margin: 0 auto;
+  min-width: 169px;
+  border-radius: 4px;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #404bbf;
+}
+
+/* ============== /HERO STYLES ============== */
+
+/* ============== BENEFITS ============== */
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 72px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.benefits-title {
+  color: #2e2f42;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.benefits-desc {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+.benefits-icon {
+  display: none;
+}
+/* ============== BENEFITS ============== */
+
+/* ============== TEAM ============== */
+.our-team {
+  background-color: #f4f4fd;
+}
+.section-title {
+  color: #2e2f42;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11; /* 111.111% */
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 72px;
+}
+.team-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 72px;
+  padding: 0;
+  box-sizing: content-box;
+}
+.team-list-item {
+  background-color: #ffffff;
+  width: 264px;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+.team-block {
+  padding: 32px 0;
+}
+.team-name {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+.team-desc {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.social-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  background-color: #4d5ae5;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: #404bbf;
+}
+.social-list-icon {
+  fill: #f4f4fd;
+}
+
+/* ============== /TEAM ============== */
+/* ============== PORTFOLIO ============== */
+.portfolio {
+  background: #fff;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  row-gap: 48px;
+}
+.portfolio-list-item {
+  background-color: #ffffff;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-list-item:hover,
+.portfolio-list-item:focus {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+.porfolio-blocks {
+  padding: 32px 0;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  margin-bottom: 8px;
+}
+
+.portfolio-name {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+.portfolio-desc {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+.overlay {
+  position: relative;
+  overflow: hidden;
+}
+.overlay-text {
+  color: #f4f4fd;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  padding: 40px 32px;
+
+  color: #f4f4fd;
+  background: #4d5ae5;
+  overflow: auto;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-list-item:hover .overlay-text,
+.portfolio-list-item:focus .overlay-text {
+  transform: translateY(0%);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+/* ============== PORTFOLIO ============== */
+
 /* ============== FOOTER STYLES ============== */
 .page-footer {
   background-color: #2e2f42;
@@ -428,7 +665,17 @@ body {
   }
   /* ============== /HEADER STYLES ============== */
 }
-
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px),
+  screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-mobile@2x.jpg);
+  }
+}
 /* ============== TABLET STYLES ============== */
 @media screen and (min-resolution: 192dpi) and (max-width: 1157px),
   screen and (min-resolution: 2dppx) and (max-width: 1157px),
@@ -523,6 +770,60 @@ body {
   }
   /* ============== HEADER STYLES ============== */
 
+  /* ============== HERO STYLES ============== */
+  .hero {
+    padding: 112px 0;
+    height: 436px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-table.jpg);
+  }
+
+  .hero-title {
+    width: 496px;
+    height: 120px;
+    font-size: 56px;
+    line-height: 1.07;
+    margin-bottom: 36px;
+    letter-spacing: 1.12px;
+  }
+  /* ============== /HERO STYLES ============== */
+
+  /* ============== BENEFITS ============== */
+  .benefits-list {
+    flex-wrap: wrap;
+    flex-direction: row;
+    column-gap: 24px;
+  }
+  .benefits-list-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .benefits-title {
+    margin: 0;
+  }
+
+  /* ============== BENEFITS ============== */
+
+  /* ============== TEAM ============== */
+  .team-list {
+    row-gap: 64px;
+    column-gap: 24px;
+  }
+  /* ============== /TEAM ============== */
+
+  /* ============== PORTFOLIO ============== */
+  .portfolio-list-item {
+    width: calc((100% - 24px) / 2);
+  }
+  .portfolio-list {
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+  /* ============== /PORTFOLIO ============== */
+
   /* ============== FOOTER STYLES ============== */
   .footer-logo {
     margin-bottom: 0;
@@ -601,8 +902,76 @@ body {
   }
   /* ============== /HEADER STYLES ============== */
 
-  /* ============== FOOTER STYLES ============== */
+  /* ============== HERO STYLES ============== */
+  .hero {
+    padding: 188px 0;
+    height: 600px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-desktop.jpg);
+  }
+  .hero-title {
+    margin-bottom: 48px;
+  }
 
+  /* ============== /HERO STYLES ============== */
+
+  /* ============== BENEFITS ============== */
+  .benefits-list-item {
+    width: calc((100% - 72px) / 4);
+  }
+  .benefits-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 264px;
+    height: 112px;
+    border-radius: 4px;
+    border: 1px solid #8e8f99;
+    background: #f4f4fd;
+    margin-bottom: 8px;
+  }
+  .benefits-title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+  .benefits-desc {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+  }
+
+  /* ============== BENEFITS ============== */
+
+  /* ============== PORTFOLIO ============== */
+  .portfolio-list-item {
+    width: calc((100% - 48px) / 3);
+  }
+  .portfolio-list {
+    row-gap: 48px;
+    column-gap: 24px;
+  }
+  /* ============== /PORTFOLIO ============== */
+
+  /* ============== FOOTER STYLES ============== */
+  .footer-container {
+    column-gap: 0;
+  }
+  .footer-logo {
+    margin-right: 120px;
+  }
+  .form-footer {
+    margin-left: 80px;
+  }
+  .review-form-field-footer {
+    opacity: 1;
+  }
   /* ============== /FOOTER STYLES ============== */
 }
 /* ============== BACKDROP STYLES ============== */
