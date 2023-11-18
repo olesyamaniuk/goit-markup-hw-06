@@ -20,7 +20,7 @@
     <header class="page-header">
       <div class="header-container container">
         <nav class="page-navigation">
-          <a class="logo-blue link" href="./index.html">
+          <a class="logo-blue link logo-link" href="./index.html">
             Web<span class="logo-black">Studio</span></a
           >
           <ul class="menu list">
@@ -53,11 +53,96 @@
             </li>
           </ul>
         </address>
+        <button class="mobile-open-btn" type="button">
+          <svg class="mobile-open-btn-icon" width="16" height="14">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
-
+    <!-- is-open -->
+    <div class="mobile-menu">
+      <!--  -->
+      <div class="mobile-menu-container">
+        <button
+          class="modal-close-btn"
+          type="button"
+          aria-label="modal close button"
+        >
+          <svg class="modal-close-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <nav>
+          <ul class="menu-list-mobile list">
+            <li class="menu-item-mobile">
+              <a
+                class="menu-navigation-studio-mobile-navig menu-addres-list-link-mobile-navig"
+                href=""
+                >Studio</a
+              >
+            </li>
+            <li class="menu-item-mobile">
+              <a class="menu-addres-list-link-mobile-navig" href=""
+                >Portfolio</a
+              >
+            </li>
+            <li class="menu-item-mobile">
+              <a class="menu-addres-list-link-mobile-navig" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="menu-address-list-mobile">
+          <ul class="menu-address-list-item-mobile list">
+            <li>
+              <a
+                class="menu-addres-list-link-mobile"
+                href="mailto:info@devstudio.com"
+              >
+                info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="menu-addres-list-link-mobile" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="social-list-mobile list">
+          <li>
+            <a href="#" class="social-list-link-mobile">
+              <svg class="social-list-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-list-link-mobile">
+              <svg class="social-list-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-list-link-mobile">
+              <svg class="social-list-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-list-link-mobile">
+              <svg class="social-list-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <main>
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-button" type="button">Order Service</button>
@@ -410,9 +495,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer section">
       <div class="container footer-container">
         <div class="footer-logo">
           <a class="logo-blue logo-link link" href="./index.html">
@@ -483,7 +568,7 @@
       <div></div>
     </footer>
     <!-- is-open -->
-    <div class="backdrop">
+    <!-- <div class="backdrop">
       <div class="modal">
         <button
           class="modal-close-btn"
@@ -497,9 +582,8 @@
         <p class="review-form-description">
           Leave your contacts and we will call you back
         </p>
-        <!-- FORM -->
+
         <form class="review-form">
-          <!-- NAME -->
           <div class="review-form-field-wrapper">
             <label class="review-form-field-label" for="user-name">
               Name
@@ -519,7 +603,7 @@
               </svg>
             </div>
           </div>
-          <!-- PHONE -->
+
           <div class="review-form-field-wrapper">
             <label class="review-form-field-label" for="user-phone">
               Phone
@@ -539,7 +623,7 @@
               </svg>
             </div>
           </div>
-          <!-- EMAIL -->
+
           <div class="review-form-field-wrapper">
             <label class="review-form-field-label" for="user-email">
               Email
@@ -558,7 +642,6 @@
             </div>
           </div>
 
-          <!-- COMMENT -->
           <div class="review-form-field-wrapper-comment">
             <label class="review-form-field-label" for="user-comment">
               Comment
@@ -570,7 +653,7 @@
               placeholder="Text input"
             ></textarea>
           </div>
-          <!-- CHACKBOX -->
+
           <div class="review-form-checkbox-wrapper">
             <input
               class="review-form-checkbox visually-hidden"
@@ -581,7 +664,6 @@
               required
             />
             <label class="review-form-checkbox-label" for="user-privacy">
-              <!-- щоб залити іконку -->
               <span class="review-form-own-checkbox">
                 <svg
                   class="review-form-own-checkbox-icon"
@@ -597,10 +679,10 @@
               >
             </label>
           </div>
-          <!-- BUTTON -->
+
           <button class="review-form-btn" type="submit">Send</button>
         </form>
       </div>
-    </div>
+    </div> -->
   </body>
 </html>
