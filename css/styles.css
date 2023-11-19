@@ -81,8 +81,10 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   display: block;
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
   text-align: center;
+  padding-bottom: 17.5px;
+  padding-top: 17.5px;
 }
 .logo-black {
   color: #2e2f42;
@@ -364,9 +366,9 @@ body {
   color: #f4f4fd;
   margin-bottom: 72px;
 }
-.logo-link {
+/* .logo-link {
   margin-bottom: 16px;
-}
+} */
 
 .footer-logo {
   margin-bottom: 72px;
