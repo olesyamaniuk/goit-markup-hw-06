@@ -128,14 +128,15 @@ body {
   background-repeat: no-repeat;
 }
 .hero-title {
-  text-align: center;
-  font-size: 56px;
-  font-weight: 700;
-  line-height: 1.07;
+  color: #fff;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
-  color: #ffffff;
-  max-width: 496px;
-  margin: 0 auto 48px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 220px;
+  height: 160px;
+  margin-bottom: 72px;
 }
 .hero-button {
   font-size: 16px;
@@ -176,8 +177,11 @@ body {
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.02em;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  text-transform: capitalize;
+  text-align: center;
+  padding-bottom: 8px;
 }
 .benefits-desc {
   width: 100%;
@@ -292,10 +296,10 @@ body {
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .porfolio-blocks {
-  padding: 32px 0;
+  padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
-  margin-bottom: 8px;
+  /* margin-bottom: 8px; */
 }
 
 .portfolio-name {
@@ -499,6 +503,17 @@ body {
 /* ============== PHONE STYLES ============== */
 
 /* ============== HEADER STYLES ============== */
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px),
+  screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-mobile@2x.jpg);
+  }
+}
 @media screen and (max-width: 767px) {
   .mobile-menu {
     position: fixed;
@@ -667,7 +682,7 @@ body {
   }
   /* ============== /HEADER STYLES ============== */
 }
-@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+/* @media screen and (min-resolution: 192dpi) and (max-width: 767px),
   screen and (min-resolution: 2dppx) and (max-width: 767px),
   screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
   .hero {
@@ -677,9 +692,9 @@ body {
       ),
       url(../images/hero-mobile@2x.jpg);
   }
-}
+} */
 /* ============== TABLET STYLES ============== */
-@media screen and (min-resolution: 192dpi) and (max-width: 1157px),
+/* @media screen and (min-resolution: 192dpi) and (max-width: 1157px),
   screen and (min-resolution: 2dppx) and (max-width: 1157px),
   screen and (min-device-pixel-ratio: 2) and (max-width: 1157px) {
   .hero {
@@ -689,7 +704,7 @@ body {
       ),
       url(../images/hero-table@2x.jpg);
   }
-}
+} */
 /* ============== HEADER STYLES ============== */
 @media screen and (min-width: 768px) {
   .container {
@@ -720,8 +735,12 @@ body {
     font-weight: 700;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding: 24px 0;
+    /* padding: 24px 0; */
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .menu-link {
+    padding: 24px 0;
+    color: var(--NAVY-BLUE, #2e2f42);
   }
   .menu-studio {
     position: relative;
@@ -769,6 +788,9 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 12px;
+  }
+  .header-contacts-link {
+    color: var(--SLATE, #434455);
   }
   /* ============== HEADER STYLES ============== */
 
@@ -867,9 +889,21 @@ body {
   }
   /* ============== /FOOTER STYLES ============== */
 }
+
+@media screen and (min-resolution: 192dpi) and (max-width: 1157px),
+  screen and (min-resolution: 2dppx) and (max-width: 1157px),
+  screen and (min-device-pixel-ratio: 2) and (max-width: 1157px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-table@2x.jpg);
+  }
+}
 /* ==============================DESKTOP============================================= */
 
-@media screen and (min-resolution: 192dpi) and (min-width: 1158px),
+/* @media screen and (min-resolution: 192dpi) and (min-width: 1158px),
   screen and (min-resolution: 2dppx) and (min-width: 1158px),
   screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
   .hero {
@@ -879,13 +913,14 @@ body {
       ),
       url(../images/hero-desktop@2x.jpg);
   }
-}
+} */
 /* ============== HEADER STYLES ============== */
 @media screen and (min-width: 1158px) {
   .container {
     width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
+    margin: 0 auto;
   }
   .contacts-list {
     display: flex;
@@ -906,6 +941,7 @@ body {
 
   /* ============== HERO STYLES ============== */
   .hero {
+    max-width: 1440px;
     padding: 188px 0;
     height: 600px;
     background-image: linear-gradient(
@@ -975,6 +1011,18 @@ body {
     opacity: 1;
   }
   /* ============== /FOOTER STYLES ============== */
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1158px),
+  screen and (min-resolution: 2dppx) and (min-width: 1158px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-desktop@2x.jpg);
+  }
 }
 /* ============== BACKDROP STYLES ============== */
 /* ============== BACKDROP STYLES ============== */
