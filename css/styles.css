@@ -81,10 +81,12 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   display: block;
-  /* margin-bottom: 16px; */
+  margin-bottom: 16px;
   text-align: center;
-  padding-bottom: 17.5px;
-  padding-top: 17.5px;
+  /* padding-bottom: 17.5px; */
+  /* padding-top: 17.5px; */
+  /* margin-top: 17;
+  margin-bottom: 17; */
 }
 .logo-black {
   color: #2e2f42;
@@ -181,7 +183,7 @@ body {
   /* margin-right: auto; */
   text-transform: capitalize;
   text-align: center;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 .benefits-desc {
   width: 100%;
@@ -371,7 +373,8 @@ body {
   margin-bottom: 72px;
 }
 /* .logo-link {
-  margin-bottom: 16px;
+  margin-top: 17;
+  margin-bottom: 17;
 } */
 
 .footer-logo {
@@ -707,6 +710,17 @@ body {
 } */
 /* ============== HEADER STYLES ============== */
 @media screen and (min-width: 768px) {
+  @media screen and (min-resolution: 192dpi) and (max-width: 1157px),
+    screen and (min-resolution: 2dppx) and (max-width: 1157px),
+    screen and (min-device-pixel-ratio: 2) and (max-width: 1157px) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-table@2x.jpg);
+    }
+  }
   .container {
     width: 768px;
   }
@@ -741,6 +755,11 @@ body {
   .menu-link {
     padding: 24px 0;
     color: var(--NAVY-BLUE, #2e2f42);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .menu-link:hover,
+  .menu-link:focus {
+    color: #404bbf;
   }
   .menu-studio {
     position: relative;
@@ -790,7 +809,16 @@ body {
     gap: 12px;
   }
   .header-contacts-link {
-    color: var(--SLATE, #434455);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header-contacts-link:hover,
+  .header-contacts-link:focus {
+    color: #404bbf;
   }
   /* ============== HEADER STYLES ============== */
 
@@ -826,6 +854,7 @@ body {
   }
 
   .benefits-title {
+    text-align: left;
     margin: 0;
   }
 
@@ -890,7 +919,7 @@ body {
   /* ============== /FOOTER STYLES ============== */
 }
 
-@media screen and (min-resolution: 192dpi) and (max-width: 1157px),
+/* @media screen and (min-resolution: 192dpi) and (max-width: 1157px),
   screen and (min-resolution: 2dppx) and (max-width: 1157px),
   screen and (min-device-pixel-ratio: 2) and (max-width: 1157px) {
   .hero {
@@ -900,7 +929,7 @@ body {
       ),
       url(../images/hero-table@2x.jpg);
   }
-}
+} */
 /* ==============================DESKTOP============================================= */
 
 /* @media screen and (min-resolution: 192dpi) and (min-width: 1158px),
